@@ -1,2 +1,3 @@
-# collaborative-problem-solving
-The code base of the "Collaborative Problem-Solving" paper.
+# Collaborative Problem-Solving in an Optimization Game
+
+⚠️ 🚧  The repository is under construction. 🚧 ⚠️
