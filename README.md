@@ -4,9 +4,7 @@
 ![example](./figures/TSP-agent-versions-iv-horizontal.png)
 *An example view of the ```Traveling Adventurers``` game.*
 
-<form action="(https://arxiv.org/abs/2505.15490">
-    <input type="submit" value="Paper link" />
-</form>
+[ArXiv Preprint](https://arxiv.org/abs/2505.15490)
 
 
 ## Abstract
