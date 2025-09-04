@@ -8,6 +8,7 @@ from random import randint
 
 from openai import OpenAI
 
+import supplementary.ilp_solver as ilp_solver
 import supplementary.tsp_utils as tsp_utils
 from supplementary.config import *
 from AGENTS.prompts_problem_solving import *
@@ -656,7 +657,7 @@ class BotInstance:
         g = tsp_utils.board_to_graph(self.total_board)
         tsp_utils.validate_graph(g)
         pp = self.visited if self.visited[-1] != "L" or len(self.visited) == 1 else self.visited[:-1]
-        self.IBP, self.IBC = tsp_utils.solve(g, pp) # use self.visited as partial path
+        self.IBP, self.IBC = ilp_solver.solve(g, pp) # use self.visited as partial path
         self.IBP.append("L")
         return self.IBP
 
